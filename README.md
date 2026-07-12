@@ -89,3 +89,29 @@
 | Focus up pane           | Ctrl+1 (or 2, 3) | CTRL-k           |
 | Focus right pane        | Ctrl+1 (or 2, 3) | CTRL-l           |
 | Close active pane       | Ctrl+W           | leader-wd        |
+
+## 9. Visual Selection, Edit & Clipboard
+
+| Task                    | Key Shortcut    | Vim Mode        | Description / Direction                            |
+| ----------------------- | --------------- | --------------- | -------------------------------------------------- |
+| Select by character     | v               | Normal Mode     | Starts character-wise selection                    |
+| Select by line          | V               | Normal Mode     | Starts line-wise selection                         |
+| Select by block/column  | Ctrl + v        | Normal Mode     | Starts rectangular block selection                 |
+| Select entire file      | ggVG            | Normal Mode     | Jumps to top, selects all to the bottom            |
+| Select current word     | viw             | Normal Mode     | Highlights the word under the cursor               |
+| Reselect last area      | gv              | Normal Mode     | Brings back your previous selection                |
+| Select inside brackets  | vi{ / vi( / vi[ | Normal Mode     | Selects inside {} () or [] (excludes brackets)     |
+| Select around brackets  | va{ / va( / va[ | Normal Mode     | Selects inside {} () or [] (includes brackets)     |
+| Yank (Copy)             | y               | Visual / Normal | Copies selected text or targeted motion            |
+| Yank current line       | yy              | Normal Mode     | Copies the entire line your cursor is on           |
+| Paste after             | p               | Normal Mode     | Pastes copied/deleted text after the cursor        |
+| Paste before            | P               | Normal Mode     | Pastes copied/deleted text before the cursor       |
+| Undo                    | u               | Normal Mode     | Undoes the last action                             |
+| Redo                    | Ctrl + r        | Normal Mode     | Redoes the action you just undid                   |
+| Delete 1 word backward  | Ctrl + w        | Insert Mode     | Deletes the word behind your cursor while typing   |
+| Delete to line start    | Ctrl + u        | Insert Mode     | Deletes everything back to line start while typing |
+| Delete 1 word backward  | db              | Normal Mode     | Deletes backward from cursor to start of word      |
+| Delete current word     | daw             | Normal Mode     | Deletes the word under cursor and its space        |
+| Delete 3 words backward | 3db             | Normal Mode     | Deletes the 3 words behind your cursor             |
+| Delete 3 words forward  | 3dw             | Normal Mode     | Deletes the 3 words ahead of your cursor           |
+| Delete 3 words (code)   | 3dE             | Normal Mode     | Deletes 3 words forward, ignoring punctuation      |
